@@ -1,3 +1,4 @@
+# Import libraries
 import openai
 from dotenv import load_dotenv
 import json
@@ -22,9 +23,10 @@ def main():
     # Load the JSON schema
     invoice_schema = load_json_schema('invoice_schema.json')
 
+    # Acsess to GPT
     client = openai.OpenAI(
-    organization='org-lxSUCkcNAolpv5oIVuORjuOO',
-    project='proj_aB1I0ExwkCAmt5cMIf70UwUS',
+    organization='',
+    project='',
     )
 
     response = client.chat.completions.create(
